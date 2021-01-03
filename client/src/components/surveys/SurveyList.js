@@ -21,7 +21,6 @@ class SurveyList extends Component {
             </p>
           </div>
           <div className="card-action">
-          {/* eslint-disable-next-line */}
             <a>Yes: {survey.yes}</a>
             <a>No: {survey.no}</a>
           </div>
@@ -33,14 +32,14 @@ class SurveyList extends Component {
   render() {
     return (
       <div>
-        { this.renderSurveys }
+        {this.renderSurveys()}
       </div>
     );
   }
 }
 
-// function mapStateToProps({ surveys }) {
-//   return { surveys };
-// }
+function mapStateToProps({ surveys }) {
+  return { surveys };
+}
 
-export default SurveyList;
+export default connect(mapStateToProps, { fetchSurveys })(SurveyList);
