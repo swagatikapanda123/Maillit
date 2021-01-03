@@ -1,12 +1,14 @@
 import React from 'react';
 
 const Landing = () => {
-    return(
-        <div style={{ textAlign: 'center' }}>
-            <h1>Maillit!!</h1>
-            <h4>collect information</h4>
-        </div>
-    )
-}
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <h1>
+        Emaily!
+      </h1>
+      Collect feedback form your users
+    </div>
+  );
+};
 
 export default Landing;
