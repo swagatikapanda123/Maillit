@@ -8,8 +8,8 @@ class SurveyList extends Component {
   }
 
   renderSurveys() {
-    return this.props.surveys.map(survey => {
-      return (
+    // console.log(this.props.surveys)
+    return this.props.surveys.map(survey => 
         <div className="card darken-1" key={survey._id}>
           <div className="card-content">
             <span className="card-title">{survey.title}</span>
@@ -25,8 +25,8 @@ class SurveyList extends Component {
             <a>No: {survey.no}</a>
           </div>
         </div>
-      );
-    });
+      
+    );
   }
 
   render() {
